@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Java Script</title>
+    <link rel="icon" href="image.ico">
+
+    <script>
+        function showproducts() {
+            var productnames = ["Bengal", "Hamalian", "Persian", "Ragdoll"];
+            var productimages = ["bengal.jpg", "hamalian.jpg", "persian.jpg", "ragdoll.jpg"];
+
+
+prodname.innerHTML= productnames[txtRange.value];
+pic.src=productimages[txtRange.value];
+        }
+    </script>
+</head>
+
+<body style="background-color: rgba(255, 200, 127, 0.212);">
+
+    <div style="padding-left: 38%;padding-top: 10%;"> 
+        <table border="2" cellspacing="5" cellpading="5" align="centre">
+            <tr>
+                <td align="centre" id="prodname"></td>
+            </tr>
+            <tr>
+                <td>
+                    <img align="centre" id="pic" src="bengal.jpg" width="500" height="300">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input align="centre" type="range" id="txtRange" min="0" max="3" value="0" onchange="showproducts()" </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
